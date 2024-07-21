@@ -1,0 +1,20 @@
+Imagine you're a botanist studying a new plant species. You've identified its key characteristics: name, height range, and bloom color. List in Python are ideal for storing this information in an ordered and mutable way, allowing you to create a clear record of the plant's details.
+Input Format:
+The input will consist of a single line containing three comma-separated values:
+The scientific name of the plant species (string)
+The minimum and maximum height of the plant in meters, separated by a hyphen (e.g., "1.5-2.0")
+The bloom color of the plant (string)
+Output Format:
+For each plant species, output its details in the format:
+Sample Input:
+Rosaceae chinensis,0.5 - 1.2,pink
+Sample Output:
+Plant: Rosaceae chinensis
+Height Range: 0.5 - 1.2 meters
+Bloom Color: pink
+
+Solution:
+list=input().split(',')
+print("Plant:",list[0])
+print("Height Range:",list[1],"meters")
+print("Bloom color:",list[2])
