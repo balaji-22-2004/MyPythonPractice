@@ -1,0 +1,22 @@
+QUESTION:
+Write a program to generate the following series --- 1, 2.0, 3.0, 6.0, 9.0, 18.0, 27.0,...
+Input format:
+The input containing an integer which denotes 'n'
+Output format:
+Print the series and refer the sample output for formatting
+Sample Input:
+6
+Sample Output:
+1 2.0 3.0 6.0 9.0 18.0
+
+Solution:
+ste=2.0
+sto=1
+n=int(input())
+for i in range(1,n+1):
+    if(i%2!=0):
+        print(sto,end=" ")
+        sto=sto*3.0
+    else:
+        print(ste,end=" ")
+        ste=ste*3.0
