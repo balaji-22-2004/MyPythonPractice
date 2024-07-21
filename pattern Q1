@@ -1,0 +1,25 @@
+DESCRIPTION:
+Write a program to generate the given pattern.
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+INPUT & OUTPUT FORMAT:
+Input consists of a single integer, n.
+Refer to the sample input and output for formatting specifications.
+SAMPLE INPUT:
+5
+SAMPLE OUTPUT:
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+Solution:
+n=int(input())
+for i in range (0,n):
+    for j in range(0,n):
+        print("*",end=" ")
+    print()    
