@@ -1,0 +1,18 @@
+You are a software engineer working for a messaging app company. The app uses tuples to store individual components of messages, such as words or phrases. However, when it’s time to send the message, you need to convert the tuple into a single string that can be transmitted. Your task is to write a Python program to convert a tuple of words into a single string.
+Input Format:
+1st line consists of words separated by space.
+Output Format:
+displays the tuple, and resultant message.
+Sample Input:
+Hello Hi How
+Sample output
+('Hello', 'Hi', 'How')
+Hello Hi How
+
+Solution:
+x=input().split(" ")
+print(tuple(x))
+print(x)
+
+
+
