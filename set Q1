@@ -1,0 +1,18 @@
+You're planning a party and want to invite all your friends. However, you might have accidentally invited some people twice! Here's where sets can be useful. You can write a Python program to create a set from your guest list, automatically eliminating duplicate invitations.
+Input Format:
+A single line containing the names of guests separated by spaces.
+Output Format:
+A single line containing the names of guests without duplicates, separated by spaces, and sorted alphabetically.
+Sample Input:
+Alice Bob Charlie Alice Bob
+Sample Output:
+Alice Bob Charlie
+
+Solution:
+n=input().split()
+s=set((n))
+s2=sorted(s)
+print(*s2)
+
+
+
