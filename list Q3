@@ -1,0 +1,20 @@
+Imagine you're judging a pie competition. You have scores for each pie in a list, and you want to determine the pie with the highest score (the winner!). Lists in Python can store these scores, and built-in functions can help you efficiently find the maximum value.
+Input Format:
+A list of integers representing the scores of the pies.
+Output Format:
+An integer representing the highest score in the list (the winning score).
+Sample Input:
+85 90 78 92 88
+Sample Output:
+92
+
+Solution:
+
+list=input().split()
+ilist=[]
+for i in list:
+    ilist.append(int(i))
+print(max(ilist))    
+
+
+
