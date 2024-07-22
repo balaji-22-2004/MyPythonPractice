@@ -1,0 +1,20 @@
+You are a librarian managing a catalog of books in your library. The catalog is stored as a tuple, where each element represents a book. Occasionally, you need to access the information about the fourth book from the end of the catalog. Your task is to write a Python program to retrieve this information.
+Input Format:
+First Line consists of Book names seprataed by comma
+Note:Number of books in the catalogue are lesss than 4. You must display the message,There are not enough books in the catalog
+Output Format:
+shows the tuple and name of the fourth book from the end.
+Sample Input:
+The Secret, The Audience,Pyhton Programming,Mind of Influence,Power of Thoughts
+Sample output
+('The Secret', 'The Audience', 'Pyhton Programming', 'Mind of Influence', 'Power of Thoughts')
+The Audience
+
+Solution:
+n=input().split(",")
+print(tuple(n))
+if (len(n)>=4):
+    print(n[-4])
+else:    
+    print("There are not enough books in the catalog")
+    
