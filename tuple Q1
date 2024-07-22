@@ -1,0 +1,29 @@
+You are a software developer working for a travel company called "Adventure Awaits". The company wants to keep track of the different destinations they offer for their holiday packages. Each destination includes a city and the country it's located in. Your task is to write a Python program that takes user input to create a tuple of destinations and then displays it.
+Input Format:
+1. First input denotes the number combinations of city and country.
+2. remaining inputs denotes the city country respectively.
+Output Format:
+Output displays the tuple.
+Sample Input:
+Enter the number of destinations you want to add: 3
+Enter the city: Paris
+Enter the country: France
+Enter the city: Rome
+Enter the country: Italy
+Enter the city: Tokyo
+Enter the country: Japan
+Sample Output:
+List of Destinations:
+(('Paris', 'France'), ('Rome', 'Italy'), ('Tokyo', 'Japan'))
+
+Solution:
+n=int(input("Enter the number of destinations you want to add:\n"))
+k=[]
+for i in range(0,n):
+    ct=input("Enter the city:\n")
+    cn=input("Enter the country\n")
+    k.append((ct,cn))
+print("List of destinations:\n")   
+print(tuple(k))
+    
+
