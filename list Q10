@@ -1,0 +1,30 @@
+Input Format:
+The first line contains an integer 'n' representing the number of movies in the user's watchlist.
+The second line contains 'n' space-separated strings representing the titles of the movies in the user's watchlist.
+The third line contains an integer 'm' representing the number of movies available in the system.
+The fourth line contains 'm' space-separated strings representing the titles of the movies available in the system.
+Output Format:
+If there is at least one movie that is both in the user's watchlist and available in the system, print 'Yes'.
+Otherwise, print 'No'.
+Sample Input:
+4
+Inception Matrix Avatar Interstellar
+5
+Avatar Titanic Matrix Gravity DunkirkSample Output:
+Yes
+
+Solution:
+w=int(input())
+wish=input().split()
+wa=int(input())
+watch=input().split()
+count=0
+for movie1 in wish:
+    if(movie1 in watch):
+        count+=1
+if(count>=1):
+    print("Yes")
+else:
+    print("No")
+        
+
