@@ -1,0 +1,17 @@
+Imagine you're organizing a palindrome competition, where players submit words or phrases that are the same spelled forward and backward (e.g., "racecar", "level"). You're given a list of entries (strings) from the competition. To determine the number of valid palindromes (length 2 or more, first and last characters same), Python's string manipulation and list iteration techniques come in handy.
+Input Format:
+A list of strings representing entries from the competition.
+Output Format:
+An integer representing the number of valid palindromes.
+Sample input:
+racecar,level,hello,madam,noon
+Sample Output:
+4
+
+Solution:
+list=input().split(",")
+count=0
+for i in list:
+    if(i==i[::-1]):
+        count+=1
+print(count)
