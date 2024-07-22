@@ -1,0 +1,19 @@
+You are a store manager at a grocery store, and you are responsible for managing the inventory of fruits. The inventory is stored as a tuple, where each element represents a fruit. Occasionally, you need to check whether a specific fruit is available in the inventory to fulfill customer requests. Your task is to write a Python program to check whether a given fruit exists within the inventory.
+Input Format:
+input consists of the string,fruits names separated by comma.
+Second Line consists of String,fruit name to check whether it is available in inventory.
+Output Format
+Shows whether the given name is present or not in the tuple,Yes or No
+Sample Input:
+Apple,Strawberry,Watermelon
+Watermelon
+Sample Output:
+
+Solution:
+n=input().split(",")
+x=input()
+if(x in n):
+    print("Yes")
+else:
+    print("No")
+
