@@ -1,0 +1,13 @@
+Imagine you're managing a library and want to efficiently organize books based on their publication year (stored in list along with book title and author). You have a list of book information (title, author, publication year). Print it.
+Input Format:
+A list as book information.  contains three elements: title (string), author (string), and publication year (integer).
+Output Format:
+print the list
+Sample Input:
+The Hobbit,J.R.R. Tolkien,1937;Lord of the Flies,William Golding,1954;Animal Farm,George Orwell,1945;Pride and Prejudice,Jane Austen,1813
+Sample Output:
+['The Hobbit,J.R.R. Tolkien,1937', 'Lord of the Flies,William Golding,1954', 'Animal Farm,George Orwell,1945', 'Pride and Prejudice,Jane Austen,1813']
+
+Solution:
+a=input().split(";")
+print(a)
