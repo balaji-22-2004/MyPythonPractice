@@ -1,0 +1,18 @@
+You are a curator for a small museum, and you maintain a digital catalog of artifacts. The catalog is stored as a tuple since the artifacts should not be frequently modified. However, when a new artifact is donated to the museum, you need to add it to the catalog. Given that tuples are immutable, you need to find a way to add this new artifact to the tuple.
+Input Format:
+enter the artifact to be added.
+Output Format:
+output shows the old and updated artifact(updated tuple).
+Sample Input:
+Enter the name of the new artifact to be added: Medieval Sword
+Sample Output:
+Initial catalog of artifacts: ('Ancient Vase', 'Old Coin', 'Rare Painting')
+Updated catalog of artifacts: ('Ancient Vase', 'Old Coin', 'Rare Painting', 'Medieval Sword')
+
+Solution:
+tup1=('Ancient Vase', 'Old Coin', 'Rare Painting')
+print("Enter the name of the new artifact to be added:")
+new=input()
+print("Initial catalog of artifacts:",tup1)
+tup2=tup1+(new,)
+print("Updated catalog of artifacts:",tup2)
