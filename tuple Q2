@@ -1,0 +1,34 @@
+You are a data analyst working for a company that manages a diverse collection of information about different products. Each product has a unique identifier, a name, a price, and an availability status. Your task is to create a tuple that captures this diverse information for a single product.
+Write a Python program to create a tuple containing different data types to represent the product information. Then, display the tuple.
+Input Format:
+1. Integer denotes the product ID.(e.g., 1234)
+2. String denotes the Product name.(e.g., T-Shirt)
+3. Float value denotes Product price.(e.g., 19.99)
+4. Boolean denotes whether the product is available or not.(yes/no)
+Output Format:
+Output shows the tuple.
+Sample Input:
+1001
+Laptop
+899.99
+yes
+Sample Output:
+Product Information Tuple:
+(1001, 'Laptop', 899.99, True)
+
+Solution:
+k=[]
+a=int(input())
+k.append(a)
+b=input()
+k.append(b)
+c=float(input())
+k.append(c)
+d=input()
+if(d=="yes"):
+    k.append(True)
+else:
+    k.append(False)
+print("Product Information Tuple")
+print(tuple(k))
+
