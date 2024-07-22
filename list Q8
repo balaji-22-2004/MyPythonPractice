@@ -1,0 +1,13 @@
+Imagine you're a scientist studying different plant species. You have a list containing the names of these species. You want to create a copy of this list for further analysis without modifying the original data. Lists in Python store this kind of information, and copying techniques ensure you can work with a separate version while keeping the original intact.
+Input Format:
+A list containing the names of plant species.
+Output Format:
+A new list containing the same names of plant species as the input list.
+Sample Input:
+Rose,Tulip,Sunflower,Lily,Daisy
+Sample Output:
+["Rose", "Tulip", "Sunflower", "Lily", "Daisy"]
+
+Solution:
+a=input().split(",")
+print(a)
