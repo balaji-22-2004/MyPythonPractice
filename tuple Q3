@@ -1,0 +1,18 @@
+You are a math teacher preparing a small program to help your students understand how tuples work in Python. You want to demonstrate how to create a tuple containing several numbers and then show them how to access a specific item from that tuple.
+Input Format:
+enter the index number to be found.
+Note: predefined tuple consists of (10,20,30,40,50,60,70,80,90,100).
+Output Format:
+gives the value at the given index
+Sample Input:
+Enter the index of the number you want to access (0-9): 0
+Sample Output:
+The number at index 0 is: 10
+
+Solution:
+tup=(10,20,30,40,50,60,70,80,90,100)
+n=int(input("Enter the index of the number you want to access (0-9):"))
+if(0<=n<=9):
+    print("The number at index",n,"is:",tup[n])
+else:
+    print("Invalid index. Please enter a number between 0 and 9")
