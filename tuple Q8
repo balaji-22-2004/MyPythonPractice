@@ -1,0 +1,26 @@
+You are a quality assurance engineer testing a software system that processes orders for a restaurant. Each order is represented as a tuple, where each element corresponds to a dish. Occasionally, you need to identify if any dishes are repeated within an order to ensure accuracy in processing. Your task is to write a Python program to find the repeated items within an order.
+Input Format:
+First Line consists of Input Dishes seprataed by comma
+Note: If there are No Repeated items, it must display,No repeated items
+Output Format:
+Output displays whether the repeated elements of the tuple or the message No repeated items
+Sample Input:
+pizza,pizza,Burger
+Sample Output
+Repeated items : pizza
+
+Solution:
+
+x=input().split(",")
+count={}
+for i in x:
+    if i in count:
+        count[i]+=1
+    else:
+        count[i]=1
+d=[key for key,value in count.items() if value>1]
+if d:
+    for duplicate in d:
+        print("Repeated items :",(*d))
+else:
+    print("No repeated items")
