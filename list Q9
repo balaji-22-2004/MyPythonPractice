@@ -1,0 +1,28 @@
+Imagine you're a writer working on a children's book. You have a list of words you've brainstormed for the story. You want to identify words that are longer than a certain length (e.g., 3 characters) to ensure they're appropriate for young readers. Lists in Python can store these words, and list comprehension techniques can help you efficiently filter based on word length.
+Input Format:
+The input consists of two lines:
+1)An integer N'  representing the number of words in the list.
+2)'N' space-separated strings representing the list of words.
+Output Format:
+The output consists of a list of words that are longer than a specified length.
+Sample Input:
+5
+cat dog elephant rabbit giraffe
+3
+Sample Output:
+elephant
+rabbit
+giraffe
+
+Solution:
+n=int(input())
+ls=input().split()
+count=int(input())
+newls=[]
+for i in ls:
+    if(len(i)>count):
+        newls.append(i)
+print(newls)     
+
+
+
