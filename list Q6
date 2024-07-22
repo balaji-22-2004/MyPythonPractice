@@ -1,0 +1,25 @@
+Imagine you're managing a music playlist for your radio station. You have a list of songs, but there might be duplicates (same song titles) that snuck in. Print it.
+Input Format:
+A list of strings representing song titles.
+Output Format:
+A list of strings with duplicate songs.
+Sample Input:
+Enter the songs in your playlist (one song per line). Enter 'done' when finished:
+alone
+endless summer
+darkside
+done
+Sample Output:
+alone
+darkside
+endless summer
+
+Solution:
+songs=[]
+while(1):
+    song=input()
+    if (song=="done"):
+        break
+    songs.append(song)
+for i in songs:
+    print(i)
