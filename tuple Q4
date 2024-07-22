@@ -1,0 +1,33 @@
+You are a chef preparing a new recipe, and you have a tuple containing the key ingredients. Each ingredient is represented by a tuple with the ingredient name, quantity, and unit of measurement. To organize your ingredients, you want to unpack the tuple into separate variables for easy access.
+Input Format:
+total 3 ingredients
+ingredient name.
+ingredient quantity.
+unit of measurements. respectively.
+Output Format:
+Shows the separated tuple.
+Sample Input:
+Flour
+2
+cups
+Sugar
+1
+cup
+Eggs
+3
+pieces
+Sample Output:
+Ingredient 1: Flour, 2 cups
+Ingredient 2: Sugar, 1 cup
+Ingredient 3: Eggs, 3 pieces
+
+Solution:
+ing1=(input(),input(),input())
+ing2=(input(),input(),input())
+ing3=(input(),input(),input())
+#tuple of tuples
+ingredients=(ing1, ing2, ing3)
+for index,(name, quantity,measurement) in enumerate(ingredients,start=1):
+    #print("Ingredient",index,":",name,",",quantity,measurement)
+    print(f"Ingredient {index}: {name}, {quantity} {measurement}") 
+#enumerate is used as alternate for increment    
