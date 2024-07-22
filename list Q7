@@ -1,0 +1,16 @@
+Imagine you're managing a grocery delivery service. You have a list to store customer orders. You need to check if a list representing a customer's order is empty before processing it. This helps you avoid errors and ensures you only process orders with actual items.  Lists in Python are versatile for storing order details, and checking their emptiness is crucial for efficient order management.
+Input Format:
+A list representing a customer's order.
+Output Format:
+A boolean value indicating whether the order is empty (True) or not (False).
+Sample Input:
+Eggs,Bread,Butter
+Sample Output:
+False
+
+Solution:
+a=input().split(",")
+if(len(a)==0):
+    print("True")
+else:
+    print("False")
