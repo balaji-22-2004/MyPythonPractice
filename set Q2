@@ -1,0 +1,25 @@
+Your book club is discussing a novel with a large cast of characters. To keep track of the characters and their roles in the story, you'd like to write a Python program to iterate over a set containing the character names.
+Input Format:
+Multiple lines where each line contains a single character's name. The input ends with an empty line.
+Output Format:
+A single line containing all character names in the set, separated by commas and sorted alphabetically.
+Sample Input:
+Alice
+Bob
+Charlie
+Alice
+Bob
+Sample Output:
+Alice, Bob, Charlie
+
+Solution:
+se=set()
+while(1):
+    value=input()
+    if(value==""):
+        break
+    else:
+        se.add(value)
+se1=sorted(se)
+se2=",".join(se1)
+print(se2)
