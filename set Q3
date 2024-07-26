@@ -1,0 +1,25 @@
+You manage a camping club and want to keep track of its members. You initially create a set to store member names. As new people join the club, you need a way to add them to the existing set.
+Input Format:
+The first line contains an integer n representing the number of new members to be added.
+The next n lines each contain a string representing the name of a new member.
+Output Format:
+ Print the set of member names after adding all new members.
+Sample Input:
+3
+Alice
+Bob
+Charlie
+Sample Output:
+{'Alice', 'Bob', 'Charlie'}
+
+Solution:
+n=int(input())
+ls=[]
+for i in range(n):
+    x=input()
+    ls.append(x)
+
+s=set(ls)
+s2=sorted(s)
+print(s2)
+
