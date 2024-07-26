@@ -1,0 +1,43 @@
+You're a student and want to manage your course schedule for the upcoming semester. You initially create a set containing the courses you're enrolled in. However, due to scheduling conflicts or changes in interest, you might need to remove some courses.
+Input Format:
+The input will start with an integer n, the number of initial courses.
+The next n lines will each contain the name of a course (a string).
+The next line will contain an integer m, the number of courses to be removed.
+The following m lines will each contain the name of a course to be removed (a string).
+Output Format:
+The output will be the list of remaining courses, each on a new line, in lexicographical order.
+Sample Input:
+5
+Mathematics
+Physics
+Chemistry
+Biology
+History
+2
+Biology
+History
+Sample Output:
+Chemistry
+Mathematics
+Physics
+
+Solution:
+n=int(input())
+ls1=[]
+for i in range(n):
+    v1=input()
+    ls1.append(v1)
+m=int(input())
+ls2=[]
+for i in range(m):
+    v2=input()
+    ls2.append(v2)
+s1=set(ls1)
+s2=set(ls2)
+d=s1.difference(s2)
+sor=sorted(d)
+for i in sor:
+    print(i)
+
+
+
